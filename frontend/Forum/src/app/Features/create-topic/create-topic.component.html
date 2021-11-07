@@ -1,0 +1,43 @@
+<div class="uk-container topic">
+    <form action="" (ngSubmit)="Topic_Create()">
+        <div class="elements">
+            <div class="uk-margin">
+                <label class="uk-form-label" for="form-horizontal-text">Topic name:</label>
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: pencil"></span>
+                    <input class="uk-input" type="text" placeholder="Topic's name" name="name" [(ngModel)]="model.name">
+                </div>
+                <div class="uk-margin uk-animation-toggle" tabindex="0">
+                    <div class=" uk-animation-scale-up">
+                        <button class="uk-margin uk-button uk-button-primary uk-animation-scale-up"><a>Create</a></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="uk-container table_elements" >
+    <table class="uk-table uk-table-striped" >
+        <thead>
+            <tr>
+                <th class="uk-width-small">Topic number</th>
+                <th>Topic name</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let topic of topic_list; let i = index">
+            <tr>
+                <td>{{i}}</td>
+                <td>{{topic}}</td>
+                <td>
+                <button class="uk-button uk-button-default" type="button">Update</button>
+                <button class="uk-button uk-button-danger" type="button">Delete</button>
+                </td>
+                
+            </tr>
+        
+        </tbody>
+    </table>
+</div>

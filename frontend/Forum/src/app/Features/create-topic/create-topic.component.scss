@@ -1,0 +1,119 @@
+:root {
+  --color-main: #71c6dd;
+  --color-main-light: #e1f6fb;
+  --color-dark: #3f4156;
+  --color-dark-medium: #51546e;
+  --color-dark-light: #696d97;
+  --color-light: #e5e5e5;
+  --color-gray: #8b8b8b;
+  --color-light-gray: #b2bdbd;
+  --color-bg: #2d2d39;
+  --color-success: #5dd693;
+  --color-error: #fc4b0b;
+}
+
+
+
+.topic .elements{
+  
+      max-width:40%;
+      text-align: center;
+      padding:2em;
+
+      margin: 0 auto;  
+    label{
+        float: left;
+        width: 20%;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        font-family: 'Zen Antique Soft', serif;
+        font-size: 1em;
+    }
+    input{
+      width: 300px;
+  }
+
+  a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+}
+
+.table_elements{
+
+  max-width:40%;
+  text-align: center;
+  padding:2em;
+
+  margin: 0 auto;
+
+  table{
+    background-color: var(--color-dark-medium);
+  }
+  th{
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 1em; 
+    font-weight: bold;
+    color: white;
+    padding:5px;
+  }
+
+  button{
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 267px) and (max-width: 567px){
+    .topic .elements{
+        max-width:100%;
+          text-align: center;
+          padding:2em;
+    
+          margin: 0 auto;  
+        label{
+            float: left;
+            width: 20%;
+            margin: 0px;
+            padding: 0px;
+            display: block;
+            font-family: 'Zen Antique Soft', serif;
+            font-size: 1em;
+        }
+        input{
+          width: 300px;
+      }
+    
+      a{
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    
+    }
+
+    .table_elements{
+
+      max-width:100%;
+      text-align: center;
+      padding:0;
+    
+      margin: 0 auto;
+    
+      button{
+        margin-bottom: 10px;
+      }
+
+      th{
+        font-family: 'Zen Antique Soft', serif;
+        font-size: 0.6em; 
+        font-weight: normal;
+        color: white;
+        padding:5px;
+      }
+    }
+}
