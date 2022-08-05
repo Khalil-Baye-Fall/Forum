@@ -96,6 +96,7 @@ class CreateTopicView(APIView):
         topic_serializer = TopicSerializer(data=request.data)
         if topic_serializer.is_valid():
             topic_serializer.save()
+            print(topic_serializer)
             return Response(topic_serializer.data, status=status.HTTP_201_CREATED)
         
 
